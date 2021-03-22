@@ -1,54 +1,107 @@
 .callToAction
-    flex: 1
-    width: 72.3rem
-    height: 50.9rem
-    padding: 8.8rem 5.8rem 0 0
-    background-color: var(--darkBlue)
+    display: flex
+    flex-direction: column
+    z-index: 2
+
+    @media(min-width: 1000px)
+        flex: 1
+        width: 72.3rem
+        height: 50.9rem
+        padding: 8.8rem 5.8rem 0 0
+        background-color: var(--darkBlue)
 
     h1
-        font-size: 52px
+        order: 1
+        font-size: 2.6rem
         font-weight: 300
-        line-height: 62px
+        line-height: 38px
         text-transform: uppercase
+        text-align: center
         color: var(--green)
         margin: 0
+        margin-top: 5.7rem
         padding: 0
 
+        @media(min-width: 1000px)
+            font-size: 52px
+            font-weight: 300
+            line-height: 62px
+            text-align: left
+            margin: 0
+
     p
-        font-size: 1.8rem
+        order: 2
+        font-size: 1.5rem
         font-weight: 300
-        line-height: 28px
+        line-height: 25px
+        text-align: center
         color: var(--grey)
-        margin-top: 2.4rem
+        margin-top: 1.6rem
+
+        @media(min-width: 1000px)
+            font-size: 1.8rem
+            line-height: 28px
+            text-align: left
+            margin-top: 2.4rem
 
     form
+        order: 4
         display: flex
         align-items: center
-        flex-direction: row
-        width: 42.7rem
-        background-color: var(--midBlue)
+        flex-direction: column
+        gap: 1.6rem
+        width: 100%
+        max-width: 42.7rem
         padding: 2px 5px
         border-radius: 28px
-        margin-top: 4rem
+        margin-top: 4.8rem
+
+        @media(min-width: 1000px)
+            flex-direction: row
+            gap: 0
+            background-color: var(--midBlue)
+            margin-top: 4rem
 
     form:invalid + .error
         opacity: 1
         display: inline-block
-        transform: translate(4rem, 1rem)
+        transform: unset
         color: var(--red)
         font-size: 1.4rem
         font-weight: bold
+        text-align: center
+        margin-top: 9px
+
+        @media(min-width: 1000px)
+            translate(4rem, 1rem)
+            text-align: left
+            margin-top: 0
 
     ul
+        order: 3
         display: flex
         align-items: center
         justify-content: space-between
         max-width: 53.6rem
-        margin-top: 6.4rem
+        margin-top: 3.3rem
 
+        @media(min-width: 1000px)
+            margin-top: 6.4rem
+
+        img
+            width: 5.6rem
+            height: auto
+
+            @media(min-width: 1000px)
+                width: 100%
+                height: auto
     .error
+        order: 5
         opacity: 0
         transform: translate(4rem, 1rem)
+
+        @media(min-width: 1000px)
+            transform: translate(4rem, 1rem)
 
 .highlight
     display: block
