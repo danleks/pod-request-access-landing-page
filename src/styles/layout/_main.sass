@@ -1,12 +1,22 @@
 main
     display: flex
-    justify-content: flex-end
     flex-direction: column
+    justify-content: center
+    align-items: center
     max-width: 1275px
-    height: 640px
-    margin: auto
+    height: 100vh
+    padding: 6.2rem 2.4rem 9.4rem
     position: relative
-    background-image: url("../assets/desktop/image-host.jpg")
+    background-image: url("../assets/mobile/image-host.jpg")
     background-repeat: no-repeat
-    background-size: contain
-    background-position-x: 100%
+    background-size: cover
+
+    @media(min-width: 1000px)
+        justify-content: flex-end
+        align-items: normal
+        background-image: url("../assets/desktop/image-host.jpg")
+        background-position-x: 100%
+        background-size: contain
+        padding: 0
+        margin: auto
+        height: 640px
