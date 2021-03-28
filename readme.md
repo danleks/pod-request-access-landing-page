@@ -8,6 +8,7 @@ Features:
 
 Stack:
 
+- JavaScript
 - HTML
 - CSS (Sass)
 - NPM, Webpack
