@@ -39,7 +39,7 @@ const CallToAction = (() => {
                 ${Input}
                 ${Button}
             </form>
-            <span class="error">Oops! Please check your email</span>
+           <span class="error">Oops! Please check your email</span>
             <ul>
                 ${icons.map(icon => `<li><img src=${icon.src} alt=${icon.name}/></li>`).join('')}
             </ul>
