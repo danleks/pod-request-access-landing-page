@@ -3,12 +3,17 @@
     flex-direction: column
     z-index: 2
 
-    @media(min-width: 1000px)
+    @media(min-width: 768px)
+        justify-content: space-between
+        align-items: unset
+        width: 63.5rem
+        height: 50.9rem
+        background-color: var(--darkBlue)
+
+    @media(min-width: 1440px)
         flex: 1
         width: 72.3rem
-        height: 50.9rem
         padding: 8.8rem 5.8rem 0 0
-        background-color: var(--darkBlue)
 
     h1
         order: 1
@@ -22,11 +27,15 @@
         margin-top: 5.7rem
         padding: 0
 
-        @media(min-width: 1000px)
-            font-size: 52px
-            font-weight: 300
-            line-height: 62px
+        @media(min-width: 768px)
+            font-size: 48px
+            line-height: 56px
             text-align: left
+            margin-top: 9.3rem
+
+        @media(min-width: 1440px)
+            font-size: 52px
+            line-height: 62px
             margin: 0
 
     p
@@ -38,10 +47,15 @@
         color: var(--grey)
         margin-top: 1.6rem
 
-        @media(min-width: 1000px)
+        @media(min-width: 768px)
+            width: 44.5rem
             font-size: 1.8rem
             line-height: 28px
             text-align: left
+            margin-top: 3.1rem
+
+        @media(min-width: 1440px)
+            width: 100%
             margin-top: 2.4rem
 
     form
@@ -54,9 +68,11 @@
         max-width: 42.7rem
         padding: 2px 5px
         border-radius: 28px
+        margin: auto
         margin-top: 4.8rem
 
-        @media(min-width: 1000px)
+        @media(min-width: 768px)
+            order: 3
             flex-direction: row
             gap: 0
             background-color: var(--midBlue)
@@ -72,7 +88,7 @@
         text-align: center
         margin-top: 9px
 
-        @media(min-width: 1000px)
+        @media(min-width: 1440px)
             translate(4rem, 1rem)
             text-align: left
             margin-top: 0
@@ -85,14 +101,14 @@
         max-width: 53.6rem
         margin-top: 3.3rem
 
-        @media(min-width: 1000px)
-            margin-top: 6.4rem
+        @media(min-width: 768px)
+            order: 4
 
         img
             width: 5.6rem
             height: auto
 
-            @media(min-width: 1000px)
+            @media(min-width: 768px)
                 width: 100%
                 height: auto
     .error
@@ -100,7 +116,7 @@
         opacity: 0
         transform: translate(4rem, 1rem)
 
-        @media(min-width: 1000px)
+        @media(min-width: 1440px)
             transform: translate(4rem, 1rem)
 
 .highlight
