@@ -11,3 +11,5 @@ Stack:
 - HTML
 - CSS (Sass)
 - NPM, Webpack
+
+[Click to see the project.](https://gifted-hermann-b55083.netlify.app/)
