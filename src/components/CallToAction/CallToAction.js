@@ -1,7 +1,6 @@
 import './CallToAction.styles.sass';
 import Input from '../Input/Input';
 import Button from '../Button/Button';
-import {validateEmail} from '../../utils/validateEmail';
 import applePodcast from '../../assets/desktop/apple-podcast.svg';
 import googlePodcast from '../../assets/desktop/google-podcasts.svg';
 import poceketCast from '../../assets/desktop/pocket-casts.svg';
