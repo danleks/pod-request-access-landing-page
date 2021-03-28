@@ -1,4 +1,4 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExrtactPlugin = require('mini-css-extract-plugin');
 const common = require('./webpack.common');
 const { merge } = require('webpack-merge');
